@@ -1,0 +1,37 @@
+<!-- inputbox text content should be printed below while typing  --->
+
+
+<input id="element" onkeyup="myFunction()">
+<h1 id = "result" ></h1> 
+
+
+<script>
+    var element = document.getElementById("element");
+    var result = document.getElementById("result");
+   
+    function myFunction() {
+         result.textContent=element.value;
+    }
+   
+    
+</script>
+
+
+ <!-- While clicking add button , "Hello" should be printed below --->
+  
+
+
+
+<button onclick="add()">Add</button>
+<div id = "result" onclick="add()"></div>
+
+<script>
+   var result = document.getElementById("result");
+
+   function add() {
+    var header = document.createElement("h1");
+    header.textContent = "Hello";
+    result.append(header);
+   }
+
+</script>

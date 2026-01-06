@@ -1,7 +1,7 @@
-/* Change the color of the button when the user clicks on it. */
+<!-- /* Change the color of the button when the user clicks on it. */ -->
 
 
-<button id = "button" onclick="change()">Change color</button>
+<!-- <button id = "button" onclick="change()">Change color</button>
 
 
 
@@ -11,4 +11,24 @@
     function change() {
         button.style.backgroundColor = "red";
     }
+</script> -->
+
+
+
+<!-- While clicking the button name should be displayed above -->
+
+<h1 id = "result">Name</h1>
+<button  onclick="update(event)">John</button>
+<button  onclick="update(event)">Ajay</button>
+<button onclick="update(event)">Hari</button>
+
+
+<script>
+    
+    var result =  document.getElementById("result")
+
+    function update(event) {
+result.textContent = event.target.textContent
+    }
+    
 </script>
